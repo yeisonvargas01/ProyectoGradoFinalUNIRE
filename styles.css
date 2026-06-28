@@ -1,0 +1,70 @@
+/* En esta parte del root lo defini para crear varias globales y por ello hacer los diseños responsivos */
+/* Para darle un tono ambiestalista a la página, y que se vea más amigable */
+:root { 
+  --eco-primary: #198754;
+  --eco-dark: #0f5132;
+  --eco-soft: #e9f7ef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, system-ui, -apple-system, sans-serif;
+}
+
+.eco-navbar {
+  background: #ffffff;
+}
+
+.hero-section {
+  background: linear-gradient(180deg, #f4fff8 0%, #eef7ff 100%);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--eco-dark);
+}
+
+.impact-card {
+  background: var(--eco-soft);
+  border: 1px solid #d1e7dd;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  height: 100%;
+  font-weight: 500;
+}
+
+#resultadoClasificacion {
+  font-weight: 600;
+}
+
+.card-punto {
+  border: 1px solid #dbe7e0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(10, 40, 20, 0.06);
+}
+
+.card-punto .badge {
+  font-size: 0.75rem;
+}
+
+.mensaje-ok {
+  background: #e9f7ef;
+  border: 1px solid #badbcc;
+  color: #0f5132;
+  border-radius: 0.5rem;
+  padding: 0.85rem 1rem;
+}
+
+.mensaje-error {
+  background: #fff3cd;
+  border: 1px solid #ffe69c;
+  color: #664d03;
+  border-radius: 0.5rem;
+  padding: 0.85rem 1rem;
+}

@@ -1,0 +1,126 @@
+PROYECTO FINAL – DOCUMENTACIÓN TÉCNICA
+Programa: Técnica en Habilidades para la Codificación de Software
+Estudiante: [Tu nombre completo]
+Docente: [Nombre del docente]
+Periodo: [Año – Mes]
+Proyecto: EcoRuta Ciudadana – Plataforma digital para la gestión responsable de residuos sólidos
+
+======================================================================
+DESCRIPCIÓN DEL PROBLEMA O NECESIDAD
+======================================================================
+En la comunidad se evidencia una problemática ambiental relacionada con la disposición inadecuada de los residuos sólidos, especialmente por desconocimiento sobre cómo clasificar residuos aprovechables y no aprovechables, falta de información sobre puntos de recolección y baja participación ciudadana en prácticas de reciclaje.
+
+Esta situación genera impactos negativos como:
+- Incremento de contaminación en calles, zonas verdes y fuentes hídricas.
+- Menor aprovechamiento de materiales reciclables.
+- Afectaciones a la salud pública y al entorno comunitario.
+- Débil cultura ambiental en hogares e instituciones.
+
+Se identifica, por tanto, la necesidad de una solución tecnológica de fácil acceso que eduque, oriente y motive a la ciudadanía a gestionar correctamente sus residuos, promoviendo hábitos sostenibles con impacto social medible.
+
+======================================================================
+OBJETIVO DEL PROYECTO
+======================================================================
+Objetivo general:
+Desarrollar una solución digital (página web con proyección a aplicación móvil) que promueva el manejo adecuado de residuos sólidos, fortalezca la educación ambiental ciudadana y facilite acciones prácticas de reciclaje y reporte comunitario.
+
+Objetivos específicos:
+1. Implementar un módulo informativo para clasificar residuos (aprovechables y no aprovechables) de forma clara y práctica.
+2. Diseñar una interfaz web amigable que permita consultar puntos de recolección o reciclaje.
+3. Integrar una base de datos PostgreSQL para almacenar usuarios, reportes y registros de participación.
+4. Incorporar funcionalidades de participación ciudadana, como reporte de puntos críticos de basura.
+5. Proyectar la evolución del sistema hacia una aplicación móvil conectada a la plataforma web y la base de datos.
+
+======================================================================
+ALCANCE
+======================================================================
+El proyecto se desarrollará en una primera fase como un Producto Mínimo Viable (MVP) funcional en entorno web, con arquitectura preparada para integrarse posteriormente con una aplicación móvil.
+
+Incluye:
+- Diseño e implementación de una página web funcional.
+- Módulo de educación y clasificación de residuos.
+- Registro básico de usuarios.
+- Reporte ciudadano de situaciones relacionadas con residuos.
+- Persistencia de información en base de datos PostgreSQL.
+- Estructura técnica documentada para crecimiento futuro.
+
+No incluye en esta fase:
+- Despliegue en producción a gran escala.
+- Integraciones avanzadas con entidades externas.
+- Funcionalidades de inteligencia artificial.
+- Cobertura total móvil (se deja como proyección de segunda fase).
+
+======================================================================
+ACTIVIDADES A DESARROLLAR
+======================================================================
+1. Levantamiento y análisis de requerimientos:
+   - Definición del problema, usuarios objetivo y funcionalidades clave.
+2. Diseño del sistema:
+   - Estructura de módulos, flujo de navegación y diseño de interfaz.
+3. Desarrollo frontend:
+   - Construcción de páginas y componentes con HTML, CSS, JavaScript y/o React.
+4. Desarrollo backend e integración:
+   - Creación de servicios para gestionar información del sistema.
+5. Diseño e implementación de base de datos:
+   - Modelado y creación de tablas en PostgreSQL.
+6. Pruebas funcionales:
+   - Verificación de formularios, flujos principales y almacenamiento de datos.
+7. Documentación técnica:
+   - Consolidación de evidencia, arquitectura, resultados y conclusiones.
+8. Preparación de proyección móvil:
+   - Definición de conexión futura con app Android en Java.
+
+======================================================================
+RECURSOS NECESARIOS
+======================================================================
+Recursos humanos:
+- Estudiante desarrollador (autor del proyecto).
+- Docente orientador (seguimiento académico).
+
+Recursos técnicos:
+- Computador con acceso a internet.
+- Editor/IDE: Visual Studio Code (web) y Eclipse/Android Studio (proyección móvil).
+- Tecnologías frontend: HTML, CSS, JavaScript, React (opcional), Bootstrap/Tailwind (opcional).
+- Backend: Node.js/Express o alternativa equivalente.
+- Base de datos: PostgreSQL + pgAdmin.
+- Control de versiones: Git y GitHub.
+- Herramienta de documentación: Microsoft Word.
+
+Recursos de soporte:
+- Material de formación del programa.
+- Bancos de íconos e imágenes libres para interfaz.
+- Herramientas de prototipado opcionales (Figma/Canva).
+
+======================================================================
+EVIDENCIAS DEL DESARROLLO
+======================================================================
+Para demostrar el avance y cumplimiento del proyecto se presentarán:
+1. Documento técnico final en formato Word.
+2. Capturas de pantalla de la interfaz web (módulos principales).
+3. Evidencia del modelo de base de datos (tablas y relaciones).
+4. Registro de pruebas funcionales básicas.
+5. Repositorio de código fuente con historial de avances.
+6. Evidencia de integración entre frontend, backend y base de datos.
+7. Boceto o diseño preliminar de la versión móvil proyectada.
+
+======================================================================
+RESULTADOS O PRODUCTO FINAL
+======================================================================
+Como resultado final se entrega un prototipo funcional de plataforma web orientada al cuidado del medio ambiente mediante gestión responsable de residuos sólidos.
+
+El producto permite:
+- Sensibilizar a usuarios sobre separación correcta de residuos.
+- Facilitar el acceso a información práctica para el reciclaje.
+- Promover participación ciudadana por medio de reportes.
+- Consolidar datos útiles para análisis de impacto social y ambiental.
+
+Impacto esperado:
+- Mejora progresiva en hábitos de disposición de residuos.
+- Mayor participación comunitaria en acciones de reciclaje.
+- Aporte a la cultura ambiental local con enfoque de sostenibilidad.
+- Base tecnológica sólida para escalar a aplicación móvil y futuras alianzas institucionales.
+
+======================================================================
+NOTA FINAL
+======================================================================
+Este documento está redactado en formato técnico, breve y orientado a la práctica, en coherencia con los lineamientos solicitados para la entrega del proyecto final.
