@@ -89,31 +89,53 @@
           En la comunidad existe disposición inadecuada de residuos por falta de información sobre clasificación,
           desconocimiento de puntos de recolección y baja participación ciudadana.
         </p>
-        <div class="row g-3 mt-2">
-          <div class="col-md-6 col-lg-3">
-            <article class="impact-card">
-              <img class="impact-image" src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=600&q=80" alt="Noticia sobre contaminación en calles y fuentes hídricas">
-              <p>Contaminación de calles y fuentes hídricas</p>
-            </article>
+        <div id="impactCarousel" class="carousel slide mt-2" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <article class="impact-card impact-card-carousel">
+                <img class="impact-image impact-image-lg" src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80" alt="Noticia sobre contaminación en calles y fuentes hídricas">
+                <div class="impact-overlay">
+                  <h3>Contaminación de calles y fuentes hídricas</h3>
+                  <p>La mala disposición de residuos genera taponamientos, malos olores y contaminación del agua en zonas urbanas y rurales.</p>
+                </div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="impact-card impact-card-carousel">
+                <img class="impact-image impact-image-lg" src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80" alt="Foro sobre reciclaje y aprovechamiento de materiales">
+                <div class="impact-overlay">
+                  <h3>Menor aprovechamiento de reciclables</h3>
+                  <p>Al no separar correctamente, materiales útiles como papel, cartón y plástico se pierden y terminan en disposición final.</p>
+                </div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="impact-card impact-card-carousel">
+                <img class="impact-image impact-image-lg" src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80" alt="Informe de salud pública relacionado con residuos">
+                <div class="impact-overlay">
+                  <h3>Riesgos para salud pública</h3>
+                  <p>La acumulación de basura favorece vectores y enfermedades, afectando especialmente a niños y adultos mayores.</p>
+                </div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="impact-card impact-card-carousel">
+                <img class="impact-image impact-image-lg" src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1200&q=80" alt="Encuentro comunitario sobre cultura ambiental">
+                <div class="impact-overlay">
+                  <h3>Débil cultura ambiental</h3>
+                  <p>La falta de educación ambiental reduce la participación ciudadana y dificulta construir hábitos sostenibles en la comunidad.</p>
+                </div>
+              </article>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <article class="impact-card">
-              <img class="impact-image" src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80" alt="Foro sobre reciclaje y aprovechamiento de materiales">
-              <p>Menor aprovechamiento de reciclables</p>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <article class="impact-card">
-              <img class="impact-image" src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=80" alt="Informe de salud pública relacionado con residuos">
-              <p>Riesgos para salud pública</p>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <article class="impact-card">
-              <img class="impact-image" src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=600&q=80" alt="Encuentro comunitario sobre cultura ambiental">
-              <p>Débil cultura ambiental</p>
-            </article>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#impactCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#impactCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
       </div>
     </section>
@@ -176,7 +198,7 @@
     <section id="reporte" class="py-5 bg-white border-top">
       <div class="container">
         <h2 class="section-title">Reporte ciudadano</h2>
-        <p class="text-muted mb-4">Reportes simulados en memoria (fase frontend).</p>
+        <p class="text-muted mb-4">Reportes simulados en memoria.</p>
         <form id="reporteForm" class="row g-3" novalidate>
           <div class="col-md-6">
             <label class="form-label" for="nombre">Nombre</label>
@@ -201,9 +223,25 @@
   </main>
 
   <footer class="py-4 bg-slate-900 text-white mt-0">
-    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
-      <p class="m-0">© EcoRuta Ciudadana - Proyecto académico</p>
-      <p class="m-0">Contactanos para más información</p>
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3 align-items-md-center">
+      <div class="d-flex align-items-center gap-2">
+        <p class="m-0">© EcoRuta Ciudadana - Proyecto académico</p>
+        <div class="social-links d-flex align-items-center gap-2">
+          <a href="https://www.facebook.com/ecoruta.ciudadana.col" target="_blank" rel="noopener noreferrer" aria-label="Facebook EcoRuta Ciudadana">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/ecoruta.ciudadana.col" target="_blank" rel="noopener noreferrer" aria-label="Instagram EcoRuta Ciudadana">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://wa.me/573187654321?text=Hola%20EcoRuta%20Ciudadana%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp EcoRuta Ciudadana">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+          </a>
+        </div>
+      </div>
+      <p class="m-0 contact-cta">
+        <span class="contact-icon" aria-hidden="true">🌿</span>
+        Contactanos para más información
+      </p>
     </div>
   </footer>
 

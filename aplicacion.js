@@ -40,10 +40,16 @@ const residuosPeligrosos = [
 ];
 
 const puntosRecoleccion = [
-  { nombre: "Punto Verde Central", zona: "centro", horario: "Lun-Sáb 8:00 - 17:00" },
-  { nombre: "EcoParque Norte", zona: "norte", horario: "Lun-Vie 9:00 - 18:00" },
-  { nombre: "Estación Recicla Sur", zona: "sur", horario: "Lun-Sáb 7:00 - 16:00" },
-  { nombre: "Punto Comunitario Occidente", zona: "occidente", horario: "Mar-Dom 10:00 - 19:00" }
+  { nombre: "Barrio Payuco", zona: "norte", horario: "Lun-Sáb 8:00 - 17:00" },
+  { nombre: "Barrio La Aldea", zona: "occidente", horario: "Lun-Vie 9:00 - 18:00" },
+  { nombre: "Barrio La Suiza", zona: "norte", horario: "Lun-Sáb 7:00 - 16:00" },
+  { nombre: "Barrio Villas de la Cruz", zona: "sur", horario: "Mar-Dom 10:00 - 19:00" },
+  { nombre: "Barrio San Judas", zona: "sur", horario: "Lun-Sáb 8:00 - 17:00" },
+  { nombre: "Barrio San Nicolás", zona: "centro", horario: "Lun-Vie 9:00 - 18:00" },
+  { nombre: "Barrio San Cayetano", zona: "occidente", horario: "Lun-Sáb 7:00 - 16:00" },
+  { nombre: "Barrio La Milagrosa", zona: "norte", horario: "Mar-Dom 10:00 - 19:00" },
+  { nombre: "Centro Parque Principal", zona: "centro", horario: "Lun-Sáb 8:00 - 17:00" },
+  { nombre: "Vereda Las Lomitas", zona: "sur", horario: "Lun-Vie 9:00 - 18:00" }
 ];
 
 const reportes = [];
