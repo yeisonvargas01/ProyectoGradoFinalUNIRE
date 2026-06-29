@@ -1,20 +1,21 @@
-# TODO - EcoRuta Ciudadana (Fase 1 Frontend)
+# TODO - EcoRuta Ciudadana (Mejora visual + funcional)
 
-- [x] Crear estructura base del frontend (`index.html`, `styles.css`, `app.js`)
-- [x] Implementar diseño profesional responsive (Bootstrap + Tailwind por CDN)
-- [x] Construir secciones principales MVP:
-  - [x] Hero
-  - [x] Descripción del problema
-  - [x] Objetivos
-  - [x] Clasificación de residuos
-  - [x] Puntos de recolección
-  - [x] Reporte ciudadano
-  - [x] Footer
-- [x] Implementar funcionalidades JS (DOM, condicionales, bucles):
-  - [x] Clasificador interactivo de residuos
-  - [x] Buscador/filtrado de puntos de recolección
-  - [x] Render dinámico con bucles
-  - [x] Validación de formulario y manejo de errores
-  - [x] Contador de reportes (simulado en memoria)
-- [x] Dejar base lista para integración posterior con Node.js/Express
-- [ ] Validar visual y funcionamiento básico para feedback de mañana
+## Fase 1 (completada)
+- [x] Corregir integración de JavaScript en `index.html` (usar `aplicacion.js`).
+- [x] Reorganizar la estructura visual del contenido para que el texto no se vea "muy recto".
+- [x] Aplicar estilo más minimalista y con mayor presencia del color verde.
+- [x] Agregar logo (versión SVG embebida) en navbar y hero.
+- [x] Reparar errores de `aplicacion.js` para restaurar todas las funcionalidades.
+
+## Fase 2 (solicitada)
+- [x] Agregar favicon ambiental en la pestaña del navegador.
+- [x] Mejorar logo tipo arbolito junto a “EcoRuta Ciudadana” y aumentar ligeramente tamaño.
+- [x] Intensificar fondo verde del hero y mejorar contraste visual.
+- [x] Mejorar sección “Descripción del problema” con más peso visual.
+- [x] Agregar imagen representativa a cada una de las 4 tarjetas de impacto.
+- [x] Ampliar clasificación de residuos (más completa por categorías).
+- [x] Mostrar caneca ilustrativa según clasificación (blanca/negra/verde y soporte para peligroso).
+- [ ] Verificar manualmente funcionalidades clave del frontend:
+  - [ ] Clasificación + ilustración de caneca.
+  - [ ] Filtro de puntos de recolección.
+  - [ ] Envío de reporte ciudadano con validaciones.

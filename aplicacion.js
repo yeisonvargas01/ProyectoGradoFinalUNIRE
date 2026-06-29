@@ -16,12 +16,27 @@ const residuosOrganicos = [
   "hojas"
 ];
 
+const residuosNoAprovechables = [
+  "servilleta",
+  "papel higienico",
+  "tapabocas",
+  "pañal",
+  "icopor sucio",
+  "colilla",
+  "ceramica",
+  "espejo roto"
+];
+
 const residuosPeligrosos = [
   "pila",
   "pilas",
   "bateria",
   "medicamentos",
-  "quimicos"
+  "quimicos",
+  "aerosol",
+  "aceite usado",
+  "jeringa",
+  "pintura"
 ];
 
 const puntosRecoleccion = [
@@ -36,6 +51,7 @@ const reportes = [];
 const residuoInput = document.getElementById("residuoInput");
 const clasificarBtn = document.getElementById("clasificarBtn");
 const resultadoClasificacion = document.getElementById("resultadoClasificacion");
+const ilustracionCaneca = document.getElementById("ilustracionCaneca");
 
 const filtroZona = document.getElementById("filtroZona");
 const filtrarBtn = document.getElementById("filtrarBtn");
@@ -60,9 +76,41 @@ function clasificarResiduo(residuo) {
     return { tipo: "organico", mensaje: "🌱 Orgánico: ideal para compostaje." };
   } else if (residuosPeligrosos.includes(r)) {
     return { tipo: "peligroso", mensaje: "⚠️ Peligroso: requiere disposición especializada." };
+  } else if (residuosNoAprovechables.includes(r)) {
+    return { tipo: "no_aprovechable", mensaje: "🗑️ No aprovechable: deposítalo en caneca negra." };
   } else {
     return { tipo: "no_identificado", mensaje: "ℹ️ No identificado: revisa guía local de clasificación." };
   }
+}
+
+function renderCaneca(tipo) {
+  if (!ilustracionCaneca) return;
+
+  let clase = "caneca-neutra";
+  let texto = "Clasificación no disponible.";
+
+  if (tipo === "aprovechable") {
+    clase = "caneca-blanca";
+    texto = "Caneca blanca: plástico, vidrio, metales, papel y cartón.";
+  } else if (tipo === "organico") {
+    clase = "caneca-verde";
+    texto = "Caneca verde: residuos orgánicos aprovechables.";
+  } else if (tipo === "no_aprovechable") {
+    clase = "caneca-negra";
+    texto = "Caneca negra: residuos no aprovechables.";
+  } else if (tipo === "peligroso") {
+    clase = "caneca-roja";
+    texto = "Residuo peligroso: requiere manejo especializado.";
+  }
+
+  ilustracionCaneca.innerHTML = `
+    <div class="caneca ${clase}">
+      <div class="caneca-tapa"></div>
+      <div class="caneca-cuerpo">
+        <span>${texto}</span>
+      </div>
+    </div>
+  `;
 }
 
 clasificarBtn.addEventListener("click", () => {
@@ -74,10 +122,14 @@ clasificarBtn.addEventListener("click", () => {
     if (tipo === "aprovechable") resultadoClasificacion.classList.add("alert-success");
     else if (tipo === "organico") resultadoClasificacion.classList.add("alert-primary");
     else if (tipo === "peligroso") resultadoClasificacion.classList.add("alert-danger");
+    else if (tipo === "no_aprovechable") resultadoClasificacion.classList.add("alert-dark");
     else resultadoClasificacion.classList.add("alert-secondary");
+
+    renderCaneca(tipo);
   } catch (error) {
     resultadoClasificacion.className = "alert alert-warning mt-3 mb-0";
     resultadoClasificacion.textContent = "Se detectó un error inesperado al clasificar (bug controlado).";
+    renderCaneca("no_identificado");
     console.error("Error al clasificar residuo:", error);
   }
 });
@@ -110,21 +162,12 @@ function renderPuntos(items) {
   }
 }
 
-/*Tipos de recolección */
-
-residuoInput.addEventListener("load")
-
-listapuntos.addEventListener("Load", renderPuntos(puntosRecoleccion));
 residuoInput.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
     event.preventDefault();
     clasificarBtn.click();
   }
-
-  
-
-
-
+});
 
 function filtrarPuntos() {
   const criterio = normalizarTexto(filtroZona.value);
@@ -152,12 +195,12 @@ reporteForm.addEventListener("submit", (event) => {
     const descripcion = document.getElementById("descripcion").value.trim();
 
     if (!nombre || !zona || !descripcion) {
-      mensajeReporte.innerHTML = `<div class="mensaje-error">Todos los campos son obligatorios.</div>`;
+      mensajeReporte.innerHTML = '<div class="mensaje-error">Todos los campos son obligatorios.</div>';
       return;
     }
 
     if (descripcion.length < 10) {
-      mensajeReporte.innerHTML = `<div class="mensaje-error">La descripción debe tener mínimo 10 caracteres.</div>`;
+      mensajeReporte.innerHTML = '<div class="mensaje-error">La descripción debe tener mínimo 10 caracteres.</div>';
       return;
     }
 
@@ -175,7 +218,7 @@ reporteForm.addEventListener("submit", (event) => {
     mensajeReporte.innerHTML = `<div class="mensaje-ok">Reporte enviado correctamente. ¡Gracias por participar!</div>`;
     reporteForm.reset();
   } catch (error) {
-    mensajeReporte.innerHTML = `<div class="mensaje-error">Ocurrió un error al enviar el reporte (bug controlado).</div>`;
+    mensajeReporte.innerHTML = '<div class="mensaje-error">Ocurrió un error al enviar el reporte (bug controlado).</div>';
     console.error("Error en reporte:", error);
   }
 });

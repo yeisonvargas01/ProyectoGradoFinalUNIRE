@@ -1,9 +1,12 @@
 /* En esta parte del root lo defini para crear varias globales y por ello hacer los diseños responsivos */
 /* Para darle un tono ambiestalista a la página, y que se vea más amigable */
-:root { 
+:root {
   --eco-primary: #198754;
+  --eco-primary-strong: #157347;
   --eco-dark: #0f5132;
   --eco-soft: #e9f7ef;
+  --eco-soft-2: #f4fff8;
+  --text-soft: #3f5f50;
 }
 
 html {
@@ -15,11 +18,79 @@ body {
 }
 
 .eco-navbar {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #e2f2e8;
+}
+
+.navbar-brand {
+  color: var(--eco-dark);
+  letter-spacing: 0.2px;
+}
+
+.brand-logo {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-flex;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(21, 115, 71, 0.28);
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #265f46;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--eco-primary);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.25rem;
+  height: 2px;
+  background: var(--eco-primary);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 .hero-section {
-  background: linear-gradient(180deg, #f4fff8 0%, #eef7ff 100%);
+  background: linear-gradient(180deg, #ddfbe8 0%, #edfdf3 45%, #eef7ff 100%);
+}
+
+.eco-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  border-radius: 999px;
+  padding: 0.38rem 0.85rem;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.hero-copy {
+  max-width: 60ch;
+  line-height: 1.75;
+  color: var(--text-soft);
+}
+
+.eco-highlight-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f7fff9 100%);
+  border: 1px solid #ddf3e4 !important;
+  border-radius: 1rem;
 }
 
 .section-title {
@@ -30,12 +101,29 @@ body {
 }
 
 .impact-card {
-  background: var(--eco-soft);
-  border: 1px solid #d1e7dd;
-  border-radius: 0.75rem;
-  padding: 1rem;
+  background: linear-gradient(180deg, #ecfdf3 0%, #e3f7ec 100%);
+  border: 1px solid #bfe7ce;
+  border-radius: 0.9rem;
+  padding: 0.75rem;
   height: 100%;
   font-weight: 500;
+  line-height: 1.6;
+  box-shadow: 0 8px 20px rgba(16, 70, 40, 0.09);
+}
+
+.impact-card p {
+  margin: 0;
+  padding: 0.5rem 0.25rem 0.2rem;
+  font-weight: 600;
+  color: #11412b;
+}
+
+.impact-image {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 0.65rem;
+  border: 1px solid #caeeda;
 }
 
 #resultadoClasificacion {
@@ -47,6 +135,12 @@ body {
   border-radius: 12px;
   background: #fff;
   box-shadow: 0 6px 20px rgba(10, 40, 20, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-punto:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 22px rgba(10, 40, 20, 0.12);
 }
 
 .card-punto .badge {
@@ -67,4 +161,87 @@ body {
   color: #664d03;
   border-radius: 0.5rem;
   padding: 0.85rem 1rem;
+}
+
+.btn-success {
+  background: var(--eco-primary);
+  border-color: var(--eco-primary);
+}
+
+.btn-success:hover {
+  background: var(--eco-primary-strong);
+  border-color: var(--eco-primary-strong);
+}
+
+.list-group-item {
+  border-left: 4px solid #d7f3e3;
+}
+
+p,
+li {
+  line-height: 1.7;
+}
+
+.caneca-resultado {
+  display: flex;
+  justify-content: center;
+}
+
+.caneca {
+  width: min(260px, 100%);
+  text-align: center;
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.12));
+}
+
+.caneca-tapa {
+  height: 16px;
+  border-radius: 10px 10px 4px 4px;
+  margin: 0 auto;
+  width: 84%;
+}
+
+.caneca-cuerpo {
+  min-height: 130px;
+  border-radius: 0 0 24px 24px;
+  padding: 1rem 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.caneca-blanca .caneca-tapa { background: #e5e7eb; }
+.caneca-blanca .caneca-cuerpo {
+  background: linear-gradient(180deg, #ffffff 0%, #f3f4f6 100%);
+  border: 2px solid #d1d5db;
+  color: #1f2937;
+}
+
+.caneca-verde .caneca-tapa { background: #047857; }
+.caneca-verde .caneca-cuerpo {
+  background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+  border: 2px solid #047857;
+  color: #ecfdf5;
+}
+
+.caneca-negra .caneca-tapa { background: #111827; }
+.caneca-negra .caneca-cuerpo {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+  border: 2px solid #030712;
+  color: #f9fafb;
+}
+
+.caneca-roja .caneca-tapa { background: #b91c1c; }
+.caneca-roja .caneca-cuerpo {
+  background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+  border: 2px solid #b91c1c;
+  color: #fff1f2;
+}
+
+.caneca-neutra .caneca-tapa { background: #64748b; }
+.caneca-neutra .caneca-cuerpo {
+  background: linear-gradient(180deg, #cbd5e1 0%, #94a3b8 100%);
+  border: 2px solid #64748b;
+  color: #0f172a;
 }
