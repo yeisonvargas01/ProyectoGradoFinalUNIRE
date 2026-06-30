@@ -23,6 +23,12 @@ Este desarrollo integra formación técnica y académica:
 
 La primera fase está orientada a una experiencia web funcional y profesional, priorizando claridad visual, interacción y usabilidad.
 
+La segunda fase está orientada una integración simple con un entorno mas desarrollo y animico,
+en un sistema de dominio con información de los usuarios y partición ciudadana.
+
+La tercera fase es la experiencia interactiva sistema-usuario permitiendo conocer, 
+la educación ambiental y como promover un buen manejado de recolección de los diferentes puntos de basura.
+
 ## Valor social y moral
 
 EcoRuta Ciudadana no solo busca mostrar tecnología; busca generar conciencia.  
