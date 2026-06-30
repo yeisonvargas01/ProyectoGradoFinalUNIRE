@@ -120,10 +120,61 @@ body {
 
 .impact-image {
   width: 100%;
-  height: 110px;
+  height: 220px;
   object-fit: cover;
+  object-position: center;
   border-radius: 0.65rem;
   border: 1px solid #caeeda;
+}
+
+.impact-card-carousel {
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+  border-radius: 1rem;
+}
+
+.impact-image-lg {
+  height: 300px;
+  object-position: center 35%;
+}
+
+.impact-overlay {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background: linear-gradient(180deg, rgba(12, 66, 40, 0.9) 0%, rgba(10, 54, 33, 0.94) 100%);
+  color: #ecfdf5;
+  border: 1px solid rgba(110, 231, 183, 0.45);
+  border-radius: 0.85rem;
+  padding: 0.85rem 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.impact-overlay h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.35rem;
+  color: #f0fdf4;
+}
+
+.impact-overlay p {
+  margin: 0;
+  color: #dcfce7;
+  line-height: 1.55;
+}
+
+.impact-card-carousel:hover .impact-overlay {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
+}
+
+#impactCarousel {
+  border: 1px solid #9ee6bd;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, #dcfce7 0%, #d4f8e0 100%);
+  padding: 0.75rem;
 }
 
 #resultadoClasificacion {
@@ -244,4 +295,54 @@ li {
   background: linear-gradient(180deg, #cbd5e1 0%, #94a3b8 100%);
   border: 2px solid #64748b;
   color: #0f172a;
+}
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8fff1;
+  border: 1px solid #8ed6ac;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(5, 85, 47, 0.25);
+  background: #c9f4db;
+}
+
+.social-links img {
+  width: 17px;
+  height: 17px;
+  filter: invert(29%) sepia(38%) saturate(1228%) hue-rotate(103deg) brightness(94%) contrast(92%);
+}
+
+.social-links a:nth-child(3) img {
+  filter: invert(42%) sepia(94%) saturate(697%) hue-rotate(93deg) brightness(92%) contrast(98%);
+}
+
+.contact-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+}
+
+.contact-icon {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .impact-image-lg {
+    height: 250px;
+    object-position: center;
+  }
+
+  .impact-card-carousel {
+    min-height: 330px;
+  }
 }
