@@ -36,19 +36,6 @@ La primera fase está orientada a una experiencia web funcional y profesional, p
 EcoRuta Ciudadana no solo busca mostrar tecnología; busca generar conciencia.  
 Cada sección está pensada para aportar educación ambiental práctica y fomentar hábitos sostenibles en la comunidad, especialmente en contextos donde la información ambiental no siempre es clara o accesible.
 
-## Ejecución local
-
-1. Clona este repositorio.
-2. Abre la carpeta en Visual Studio Code.
-3. Ejecuta `index.html` con Live Server (o abre el archivo en tu navegador).
-4. Interactúa con las secciones de clasificación, puntos de recolección y reporte.
-
-## Próximos pasos
-
-- Integrar backend para guardar reportes y usuarios.
-- Conectar base de datos PostgreSQL.
-- Implementar autenticación básica de usuarios.
-- Extender cobertura de pruebas funcionales y de usabilidad.
 
 ---
 
