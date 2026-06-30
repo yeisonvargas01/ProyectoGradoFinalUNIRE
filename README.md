@@ -17,7 +17,7 @@ Construir una solución digital clara y accesible que ayude a cualquier persona 
 Este desarrollo integra formación técnica y académica:
 
 - **Frontend:** HTML, CSS, JavaScript.
-- **Diseño UI:** Bootstrap con estilos personalizados.
+- **Diseño UI:** Bootstrap, Tailwind, con estilos personalizados.
 - **Proyección:** integración con backend Api rest y base de datos PostgreSQL para persistencia real.
 - **Aplicación móvil:** Aplicación utilizable para el buen manejo y la importancia de conocer los diversos factores ambientales, partiendo desde una educación vitable.
 
