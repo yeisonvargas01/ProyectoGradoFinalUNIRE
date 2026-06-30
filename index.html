@@ -206,9 +206,25 @@
             <input class="form-control" id="nombre" type="text" required>
           </div>
           <div class="col-md-6">
+            <label class="form-label" for="identificacion">Identificación</label>
+            <input class="form-control" id="identificacion" type="text" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="contacto">Contacto</label>
+            <input class="form-control" id="contacto" type="tel" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="correo">Correo electrónico</label>
+            <input class="form-control" id="correo" type="email" required>
+          </div>
+          <div class="col-md-6">
             <label class="form-label" for="zona">Zona</label>
             <input class="form-control" id="zona" type="text" list="zonasSugeridas" placeholder="Selecciona zona o barrio" required>
             <datalist id="zonasSugeridas">
+              <option value="norte"></option>
+              <option value="sur"></option>
+              <option value="centro"></option>
+              <option value="occidente"></option>
               <option value="Barrio Payuco"></option>
               <option value="Barrio La Aldea"></option>
               <option value="Barrio La Suiza"></option>
