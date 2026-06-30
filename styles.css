@@ -1,4 +1,4 @@
-/* En esta parte del root lo defini para crear varias globales y por ello hacer los diseños responsivos */
+/* En esta parte del root lo defini para que el diseño se más responsivo */
 /* Para darle un tono ambiestalista a la página, y que se vea más amigable */
 :root {
   --eco-primary: #198754;
@@ -171,9 +171,9 @@ body {
 }
 
 #impactCarousel {
-  border: 1px solid #9ee6bd;
+  border: 1px solid #62e099;
   border-radius: 1rem;
-  background: linear-gradient(180deg, #dcfce7 0%, #d4f8e0 100%);
+  background: linear-gradient(180deg, #abd4b9 0%, #d4f8e0 100%);
   padding: 0.75rem;
 }
 
