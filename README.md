@@ -19,7 +19,7 @@ Este desarrollo integra formación técnica y académica:
 - **Frontend:** HTML, CSS, JavaScript.
 - **Diseño UI:** Bootstrap, Tailwind, con estilos personalizados.
 - **Proyección:** integración con backend Api rest y base de datos PostgreSQL para persistencia real.
-- **Aplicación móvil:** Aplicación utilizable para el buen manejo y la importancia de conocer los diversos factores ambientales, partiendo desde una educación vitable.
+- **Aplicación móvil:** Aplicación desarrollada con Java utilizable para el buen manejo y la importancia de conocer los diversos factores ambientales, partiendo desde una educación vitable. 
 
 La primera fase está orientada a una experiencia web funcional y profesional, priorizando claridad visual, interacción y usabilidad.
 
