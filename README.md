@@ -1,14 +1,14 @@
 # EcoRuta Ciudadana
 
 EcoRuta Ciudadana es una plataforma web educativa enfocada en la gestión responsable de residuos sólidos.  
-El proyecto nace con una visión social y ambiental: fortalecer la cultura ciudadana, facilitar la clasificación de residuos y promover acciones concretas para cuidar el entorno.
+El proyecto nace con una visión social y ambiental: fortalecer la cultura ciudadana en mi ciudad, facilitar la clasificación de residuos y promover acciones concretas para cuidar el entorno para nuestra localidad.
 
 ## Propósito
 
 Construir una solución digital clara y accesible que ayude a cualquier persona a:
 
 - identificar el tipo de residuo que genera,
-- conocer puntos de recolección cercanos,
+- conocer puntos de recolección cercanos para el municipio,
 - participar mediante reportes ciudadanos,
 - tomar decisiones más responsables con el medio ambiente.
 
