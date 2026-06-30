@@ -37,6 +37,16 @@ body {
   box-shadow: 0 6px 18px rgba(21, 115, 71, 0.28);
 }
 
+.brand-phrase {
+  margin-left: 0.45rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f7a4d;
+  border-left: 2px solid #9be7bc;
+  padding-left: 0.6rem;
+  opacity: 0.9;
+}
+
 .nav-link {
   font-weight: 600;
   color: #265f46;
@@ -144,12 +154,13 @@ body {
   left: 1rem;
   right: 1rem;
   bottom: 1rem;
-  background: linear-gradient(180deg, rgba(12, 66, 40, 0.9) 0%, rgba(10, 54, 33, 0.94) 100%);
-  color: #ecfdf5;
-  border: 1px solid rgba(110, 231, 183, 0.45);
+  background: linear-gradient(180deg, rgba(18, 90, 56, 0.68) 0%, rgba(12, 76, 45, 0.74) 100%);
+  color: #f0fdf4;
+  border: 1px solid rgba(167, 243, 208, 0.55);
   border-radius: 0.85rem;
   padding: 0.85rem 1rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(2px);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -161,7 +172,7 @@ body {
 
 .impact-overlay p {
   margin: 0;
-  color: #dcfce7;
+  color: #f0fdf4;
   line-height: 1.55;
 }
 
